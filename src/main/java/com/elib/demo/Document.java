@@ -1,13 +1,11 @@
 package com.elib.demo;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-@Entity
-@Table(name="Document", 
+@Table(name="Document",
 uniqueConstraints = {@UniqueConstraint(columnNames = {"title","ISBNCode"})})
 public class Document {
 
@@ -16,7 +14,7 @@ public class Document {
 	public static final int JOURNAL = 2;
 	public static final int TECHNICAL_REPORT = 3;
 	private int type;
-	
+
 	@Id
 	private int documentCode;
 	
@@ -30,7 +28,7 @@ public class Document {
 	
 	@OneToOne
 	private Loan loan = null;
-	
+
 	Document() {}	// for hibernate
 	
 	public Document(String title) { 
