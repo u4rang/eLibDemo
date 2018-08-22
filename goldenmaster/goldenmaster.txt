@@ -1,0 +1,336 @@
+Added user: 0 - Paula
+Added user: 1 - Michael
+Added user: 2 - Neuman
+Added staff: 3 - John
+Added staff: 4 - Peter
+Added doc: 0 - Refactoring
+Added doc: 1 - Clean Code
+Added doc: 2 - Design Patterns
+Added doc: 3 - Communications of ACM
+Added doc: 4 - Software Architecture
+New loan: Paula - Refactoring
+New loan: Michael - Clean Code
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+User: 0 - Paula
+Address: Seoul
+Phone: 010-234-1837
+Borrowed documents:
+0 - Refactoring
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Document: 1
+Title: Clean Code
+Authors: Martin
+IBSN: ISBN002
+Hold by 1 - Michael
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+User: 0 - Paula holds doc: 0 - Refactoring - due to: 2018-08-29
+User: 1 - Michael holds doc: 1 - Clean Code - due to: 2018-08-29
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+User found: 0 - Paula
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Doc found: 0 - Refactoring
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+diff = -7
+Loan closed: Paula - Refactoring
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+New loan: Paula - Design Patterns
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Removed doc: 3 - Communications of ACM
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Removed user: 3 - John
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Added user: 5 - Kershaw
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Added staff: 6 - Furguson
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Added doc: 5 - CQRS
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Added doc: 6 - Event Storming
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
+Added doc: 7 - Software Architectures
+
+COMMANDS:
+addUser name, address, phone
+addStaff name, address, phone, id
+rmUser userld
+addBook title, authors, ISBN
+addReport title, authors, refs, organization
+addJournal title
+rmDoc docid
+borrowDoc userld, docId
+returnDoc docId
+searchUser name
+searchDoc title
+isHolding userld, docId
+printLoans
+printUser userld
+printDoc docId
+exit
+
+
