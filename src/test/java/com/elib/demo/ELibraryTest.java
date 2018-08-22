@@ -10,7 +10,7 @@ public class ELibraryTest {
     private GoldenMaster goldenMaster;
 
     @Before
-    public void setup() throws Exception{
+    public void setup() {
         goldenMaster = new GoldenMaster();
     }
 /*
