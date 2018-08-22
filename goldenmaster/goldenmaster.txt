@@ -80,8 +80,8 @@ printDoc docId
 exit
 
 
-User: 0 - Paula holds doc: 0 - Refactoring - due to: 2018-08-29
-User: 1 - Michael holds doc: 1 - Clean Code - due to: 2018-08-29
+User: 0 - Paula holds doc: 0 - Refactoring - due to: 2018-08-30
+User: 1 - Michael holds doc: 1 - Clean Code - due to: 2018-08-30
 
 COMMANDS:
 addUser name, address, phone

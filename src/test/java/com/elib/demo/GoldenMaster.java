@@ -12,12 +12,8 @@ import java.util.stream.Collectors;
 
 public class GoldenMaster {
 
-    public static final String GOLDENMASTER_GOLDENMASTER = "goldenmaster/goldenmaster.txt";
-
-    private CmdUI ui;
-
-
-    String simulatedInput = "printUser 0\n"
+    public static final String GOLDEN_MASTER_PATH = "goldenmaster/goldenmaster.txt";
+    public static final String simulatedInput = "printUser 0\n"
             + "printDoc 1\n"
             + "printLoans\n"
 //				+ "isHolding 0, 1\n"
@@ -34,23 +30,23 @@ public class GoldenMaster {
             + "addJournal Software Architectures\n"
             + "exit\n"; // Bye
 
+    private CmdUI ui;
+
     public void generateGoldenMaster() throws IOException {
-        String result = runResult();
-        Files.write(Paths.get(GOLDENMASTER_GOLDENMASTER), result.getBytes());
+        Files.write(Paths.get(GOLDEN_MASTER_PATH), runResult().getBytes());
     }
 
     public String readGoldenMaster() throws IOException{
-        return Files.readAllLines(Paths.get(GOLDENMASTER_GOLDENMASTER)).stream().collect(Collectors.joining("\n")) + "\n";
+        return Files.readAllLines(Paths.get(GOLDEN_MASTER_PATH)).stream().collect(Collectors.joining("\n")) + "\n";
     }
 
     public String runResult(){
 
         ByteArrayOutputStream ostream = new ByteArrayOutputStream();
-        PrintStream pstream = new PrintStream(ostream);
-        System.setOut(pstream);
 
-        ByteArrayInputStream istream = new ByteArrayInputStream(simulatedInput.getBytes());
-        System.setIn(istream);
+        System.setOut(new PrintStream(ostream));
+
+        System.setIn(new ByteArrayInputStream(simulatedInput.getBytes()));
 
         ui = new CmdUI();
         ui.start();

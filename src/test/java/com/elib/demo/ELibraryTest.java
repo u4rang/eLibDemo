@@ -13,12 +13,14 @@ public class ELibraryTest {
     public void setup() {
         goldenMaster = new GoldenMaster();
     }
-/*
+
+    /*
     @Test
     public void should_generate_golden_master() throws Exception{
         goldenMaster.generateGoldenMaster();
     }
-*/
+    */
+
     @Test
     public void should_check_golden_master() throws Exception{
         String expected = goldenMaster.readGoldenMaster().replaceAll(System.getProperty("line.separator"),"\n");
@@ -26,4 +28,5 @@ public class ELibraryTest {
 
         assertEquals(expected, actual);
     }
+
 }
