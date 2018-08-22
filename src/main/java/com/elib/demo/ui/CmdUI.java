@@ -1,4 +1,9 @@
-package com.elib.demo;
+package com.elib.demo.ui;
+
+import com.elib.demo.domain.Document;
+import com.elib.demo.domain.Loan;
+import com.elib.demo.infra.PersistenceManager;
+import com.elib.demo.domain.User;
 
 import java.time.LocalDate;
 import java.util.LinkedList;

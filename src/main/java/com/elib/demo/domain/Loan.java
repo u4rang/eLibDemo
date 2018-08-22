@@ -1,4 +1,4 @@
-package com.elib.demo;
+package com.elib.demo.domain;
 
 import java.time.LocalDate;
 
@@ -23,7 +23,7 @@ public class Loan {
 	private LocalDate occurredOn;
 	private LocalDate dueDate;
 	
-	Loan() {} // for hibernate
+	protected Loan() {} // for hibernate
 	
 	public Loan(User usr, Document doc) { 
 		user = usr;

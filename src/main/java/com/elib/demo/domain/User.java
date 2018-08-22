@@ -1,4 +1,4 @@
-package com.elib.demo;
+package com.elib.demo.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class User {
 	
 	private static int nextUserCodeAvailable = 0;
 	
-	User() {} // for hibernate
+	protected User() {} // for hibernate
 	
 	public User(String name, String addr, String phone) { 
 		fullName = name;
@@ -66,11 +66,8 @@ public class User {
 		return userCode == user.userCode;
 	}
 
-	public boolean authorizedUser() { 
-		if (getType() == GUEST)
-			return false;
-		
-		return true;
+	public boolean authorizedUser() {
+		return getType() != GUEST;
 	}
 	
 	public int getType() {

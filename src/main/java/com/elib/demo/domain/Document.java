@@ -1,12 +1,10 @@
-package com.elib.demo;
+package com.elib.demo.domain;
 
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 
-@Table(name="Document",
-uniqueConstraints = {@UniqueConstraint(columnNames = {"title","ISBNCode"})})
+@Entity
+//@Table(name="Document",
+//uniqueConstraints = {@UniqueConstraint(columnNames = {"title","ISBNCode"})})
 public class Document {
 
 	// Types of documents
@@ -29,7 +27,7 @@ public class Document {
 	@OneToOne
 	private Loan loan = null;
 
-	Document() {}	// for hibernate
+	protected Document() {}	// for hibernate
 	
 	public Document(String title) { 
 		this.title = title;
@@ -83,7 +81,7 @@ public class Document {
 		return !isAvailable();
 	}
 	
-	public boolean authorizedLoan(User user) { 
+	public boolean authorizedLoan(User user) {
 		switch (type) {
 		case BOOK: 
 			return true;

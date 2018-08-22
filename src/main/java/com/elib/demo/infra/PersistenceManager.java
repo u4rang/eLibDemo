@@ -1,4 +1,4 @@
-package com.elib.demo;
+package com.elib.demo.infra;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -9,7 +9,7 @@ public enum PersistenceManager {
 	 
 	private EntityManagerFactory emFactory;
 	  
-	private PersistenceManager() {
+	PersistenceManager() {
 		// "elibdemo" was the value of the name attribute of the
 		// persistence-unit element.
 	    emFactory = Persistence.createEntityManagerFactory("elibdemo");
