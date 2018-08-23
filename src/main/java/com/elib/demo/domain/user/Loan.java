@@ -1,4 +1,6 @@
-package com.elib.demo.domain;
+package com.elib.demo.domain.user;
+
+import com.elib.demo.domain.document.Document;
 
 import java.time.LocalDate;
 
@@ -68,7 +70,7 @@ public class Loan {
 	}
 	
 	public void print() {
-		System.out.println("User: " + user.getCode() +
+		System.out.println("user: " + user.getCode() +
 				" - " + user.getName() +
 				" holds doc: " + document.getCode() + 
 				" - " + document.getTitle() +

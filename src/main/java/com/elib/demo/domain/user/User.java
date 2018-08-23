@@ -1,4 +1,6 @@
-package com.elib.demo.domain;
+package com.elib.demo.domain.user;
+
+import com.elib.demo.domain.document.Document;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-//@Table(name="User",
+//@Table(name="user",
 //uniqueConstraints = {@UniqueConstraint(columnNames = {"fullName","phoneNumber"})})
 public class User {
 	
@@ -118,7 +120,7 @@ public class User {
 	}
 	
 	public void printInfo() {
-		System.out.println("User: " + getCode() + " - " + getName()); 
+		System.out.println("user: " + getCode() + " - " + getName());
 		if (getType() == STAFF)
 			System.out.println("Id: " + getId());
 		System.out.println("Address: " + getAddress()); 

@@ -1,9 +1,12 @@
-package com.elib.demo.domain;
+package com.elib.demo.domain.document;
+
+import com.elib.demo.domain.user.Loan;
+import com.elib.demo.domain.user.User;
 
 import javax.persistence.*;
 
 @Entity
-//@Table(name="Document",
+//@Table(name="document",
 //uniqueConstraints = {@UniqueConstraint(columnNames = {"title","ISBNCode"})})
 public class Document {
 
@@ -137,7 +140,7 @@ public class Document {
 	}
 
 	protected void printHeader() { 
-		System.out.println("Document: " + getCode());
+		System.out.println("document: " + getCode());
 		System.out.println("Title: " + getTitle());
 	}
 	
@@ -166,6 +169,8 @@ public class Document {
 			break;
 		} 
 	}
+
+
 		
 	public void printInfo() { 
 		printHeader() ; 
